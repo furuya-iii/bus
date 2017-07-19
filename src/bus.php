@@ -8,4 +8,11 @@ namespace TripleI\bus;
 
 class bus
 {
+
+
+    public function __construct()
+    {
+    }
+
+
 }

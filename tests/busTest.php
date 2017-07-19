@@ -17,13 +17,10 @@ class busTest extends \PHPUnit_Framework_TestCase
 
     public function testNew()
     {
-        $actual = $this->skeleton;
-        $this->assertInstanceOf('\TripleI\bus\bus', $actual);
+
+
+
+
     }
 
-    public function testException()
-    {
-        $this->setExpectedException('\TripleI\bus\Exception\LogicException');
-        throw new Exception\LogicException;
-    }
 }
