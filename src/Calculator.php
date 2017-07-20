@@ -40,10 +40,11 @@ class Calculator
         $free_infant_count = $adult_count->multiplication($rate);
         $infants = $group->getInfant();
 
+        //todo: 処理方法を修正する
+        //無料分の幼児の数を計算
         $free_normal_infant_count = $infants->countNormal();
         $free_welfare_infant_count = $infants->countWelfare();
         if (! $free_infant_count->isLarge($infants->count())) {
-
             if ($free_infant_count->isLarge($free_normal_infant_count)) {
                 $infant_free_count = $free_infant_count->subtraction($free_normal_infant_count);
                 if (! $infant_free_count->isLarge($free_welfare_infant_count)) {
